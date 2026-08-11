@@ -24,7 +24,7 @@ public class Inventory<T extends Item> {
 
     public T getItem(String id)
     {
-        return inventory.get(id);
+            return inventory.get(id);
     }
 
     public List<T> getAllItems()

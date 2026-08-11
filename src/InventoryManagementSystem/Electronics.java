@@ -3,8 +3,8 @@ package InventoryManagementSystem;
 public class Electronics extends Item{
     private int warranty;
 
-    public Electronics(String id, String name, double price, int quantity, int warranty) {
-        super(id, name, price, quantity);
+    public Electronics(String name, double price, int quantity, int warranty) {
+        super(name, price, quantity);
         this.warranty = warranty;
     }
 

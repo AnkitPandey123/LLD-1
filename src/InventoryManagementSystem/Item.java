@@ -7,9 +7,10 @@ public class Item implements Comparable<Item> {
     private String name;
     private double price;
     private int quantity;
+    private static int idgenerator = 1;
 
-    public Item(String id, String name, double price, int quantity) {
-        this.id = id;
+    public Item(String name, double price, int quantity) {
+        this.id = "id-" + idgenerator++;
         this.name = name;
         this.price = price;
         this.quantity = quantity;
