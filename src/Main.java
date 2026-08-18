@@ -1,7 +1,7 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -19,9 +19,9 @@ public class Main {
         num.add(2.5F);
         num.add(2.5);
      //   Number nt = num.get(1);
-        System.out.println(num.get(0).getClass());
+      //  System.out.println(num.get(0).getClass());
         int x =  list.get(0).intValue();
-        System.out.println(x);
+      //  System.out.println(x);
       //  System.out.println(x);
        // int i = num.get(0);
       //  System.out.println(num.getClass());
@@ -32,7 +32,16 @@ public class Main {
 
         HashSet<Integer> hs = new HashSet<>();
         hs.add(1);
-        System.out.println(hs.remove(2));
+      //  System.out.println(hs.remove(2));
+
+        List<Integer> l = Arrays.asList(1,2,3,4,5);
+        List<Integer> sl = l.stream().filter(z -> z % 2 == 0).collect(toList());
+        int total = 0;
+
+        Optional<Integer> result = l.stream().filter(z -> z%2 == 0).findFirst();
+        System.out.println(result.get());
+
+
 
 
 
