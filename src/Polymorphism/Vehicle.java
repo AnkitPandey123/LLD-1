@@ -11,10 +11,5 @@ public class Vehicle {
           System.out.println(name);
      }
 
-     @Override
-     public boolean equals(Object o)
-     {
-          return this.counter - o.counter;
-     }
 
 }

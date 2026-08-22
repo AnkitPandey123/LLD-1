@@ -1,4 +1,4 @@
-package Generics;
+package generics;
 
 public class PairClient {
     public static void main(String[] args) {
