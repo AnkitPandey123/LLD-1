@@ -3,10 +3,10 @@ package solid;
 public class BirdWOSolid {
 
     String name;
-    String type;
+    BirdType type;
     String color;
 
-    public BirdWOSolid(String name, String type, String color) {
+    public BirdWOSolid(String name, BirdType type, String color) {
         this.name = name;
         this.type = type;
         this.color = color;
@@ -14,15 +14,15 @@ public class BirdWOSolid {
 
     public void fly()
     {
-        if(type == "Pigeon")
+        if(type.equals(BirdType.Crow))
         {
             System.out.println("Pigeon is flying");
         }
-        else if(type == "Ostrich")
+        else if(type.equals("rhino"))
         {
             System.out.println("Ostrich is flying");
         }
-        else if(type == "Penguin")
+        else if(type.equals(BirdType.Penguin))
         {
             System.out.println("Can't fly");
         }

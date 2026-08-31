@@ -8,8 +8,8 @@ public class Client {
     }
     public static void main(String[] args) {
 
-//        BirdWOSolid penguin = new BirdWOSolid("pen", "Penguin", "black");
-//        penguin.fly();
+        BirdWOSolid penguin = new BirdWOSolid("pen", BirdType.Penguin, "black");
+        penguin.fly();
 
         Flyable pegion = new Pegion("p1", "white");
         flyBirds(pegion);
@@ -17,10 +17,12 @@ public class Client {
         Flyable crow = new Crow("c1", "black");
         flyBirds(crow);
 
-        BirdWSolid penguin = new Penguin("p1", "grey");
+        BirdWSolid penguin1 = new Penguin("p1", "grey");
 
         Flyable dove = new Dove("d1", "white", new LowFlyable());
         dove.fly();
+
+        BirdType b = BirdType.Pegion;
 
 
 

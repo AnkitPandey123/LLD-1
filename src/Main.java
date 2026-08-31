@@ -41,6 +41,11 @@ public class Main {
         Optional<Integer> result = l.stream().filter(z -> z%2 == 0).findFirst();
         System.out.println(result.get());
 
+        List<Integer> n = new ArrayList<>(5);
+
+        HashMap<String, Integer> hma = new HashMap<>();
+
+
 
 
 
@@ -48,14 +53,7 @@ public class Main {
 
     }
 
-    public static void sort(List<Integer> list, int start, int end)
-    {
 
-    }
 
-    public static void merge()
-    {
-
-    }
 }
 
