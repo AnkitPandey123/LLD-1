@@ -10,5 +10,10 @@ public class Client {
         MacUI macUI = new MacUI(weatherService);
 
         weatherService.updateWeather();
+
+        Person p = new Person("Ankit", 25);
+        System.out.println(p.age);
     }
+
+    record Person(String name, int age) {}
 }
